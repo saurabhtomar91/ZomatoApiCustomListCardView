@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="zomato_url">https://developers.zomato.com/api/v2.1</string>
+
+    <string name="zomato_api_key" translatable="false">75a0b446725a17220dcfb6a2e2b03f36</string>
+
+
+</resources>

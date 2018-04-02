@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Kiwi</string>
+    <string name="ruppess_symbol">\u20B9</string>
+    <string name="filter_header">Filter</string>
+    <string name="cost_text">Cost</string>
+    <string name="sort_by">Sort By</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/app_background"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_search"/>
+
+        <EditText
+            android:id="@+id/edt_location_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:inputType="text"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:hint="Search for location"/>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- This could also be included from another file using the include tag -->
+        <!-- i.e `res/layout/content_main.xml` -->
+        <!-- `app:layout_behavior` is set to a pre-defined standard scrolling behavior -->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_main"
+                android:layout_width="match_parent"
+                android:layout_height="529dp"
+                android:clipToPadding="false"
+                android:scrollbars="vertical" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
